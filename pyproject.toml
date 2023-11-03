@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "germanize-bot"
+version = "0.1.0"
+description = ""
+authors = ["Jayson Reis <santosdosreis@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "germanize", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.0"
+pytelegrambotapi = "^4.14.0"
+gunicorn = "^21.2.0"
+
+[tool.poetry.group.dev.dependencies]
+honcho = "^1.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
